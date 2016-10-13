@@ -8,4 +8,4 @@ general:
     - tmp/rubocop/rubocop.html
 test:
   pre:
-    - bundle exec rubocop -f html lib > tmp/rubocop/rubocop.html
+    - bundle exec rubocop -f html --out tmp/rubocop/rubocop.html lib
