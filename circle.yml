@@ -1,0 +1,11 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  ruby:
+    version: 2.3.1
+general:
+  artifacts:
+    - tmp/rubocop/rubocop.html
+test:
+  pre:
+    - bundle exec rubocop -f html lib > tmp/rubocop/rubocop.html
